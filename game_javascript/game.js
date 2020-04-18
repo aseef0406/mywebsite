@@ -77,13 +77,13 @@ function init(){
         console.log("mouse has been released");
         player.moving=false;
     });
-    canvas.addEventListener("touchstart", function(){
+    canvas.addEventListener("touchleave", function(){
         console.log("touch has been pressed");
-        player.moving=true;
+        player.moving=false;
     });
     canvas.addEventListener("touchend", function(){
         console.log("touch has been released");
-        player.moving=false;
+        player.moving=true;
     });
 };
 

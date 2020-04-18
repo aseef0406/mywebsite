@@ -77,6 +77,14 @@ function init(){
         console.log("mouse has been released");
         player.moving=false;
     });
+    canvas.addEventListener("touchstart", function(){
+        console.log("touch has been pressed");
+        player.moving=true;
+    });
+    canvas.addEventListener("touchend", function(){
+        console.log("touch has been released");
+        player.moving=false;
+    });
 };
 
 //movement
